@@ -1,9 +1,11 @@
+import Carousel from "./Carousel";
 import Navbar from "./Navbar";
 
 const Body = () => {
     return (
         <div>
-           <Navbar /> 
+            <Navbar /> 
+            <Carousel />
         </div>
     );
 }
