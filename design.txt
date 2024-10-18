@@ -1,5 +1,25 @@
 Home
+    Header
+        About
+        Services
+        Contact
+    Slider
+        images
+        text
+    Address
+    article
+        images
+        text
+    Services
+        dinning
+            article
+        event hall
+        facilities
+    Footer
 
-About
 Services
-Contact
+Gallery
+Pricing
+Contact/Enquiry
+About us
+
