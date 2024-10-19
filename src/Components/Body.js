@@ -1,3 +1,4 @@
+import Accomodation from "./Accomodation";
 import Address from "./Address";
 import Carousel from "./Carousel";
 
@@ -6,6 +7,7 @@ const Body = () => {
         <div>
             <Carousel />
             <Address />
+            <Accomodation />
         </div>
     );
 }
