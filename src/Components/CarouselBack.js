@@ -18,7 +18,7 @@ const CarouselBack = () => {
         <div className="overflow-hidden">
             <img
                 src={CAROUSEL_IMG[currentSlide]}
-                className="min-w-full h-[90vh] object-cover object-center"
+                className="min-w-full h-[100vh] object-cover object-center"
             />
         </div>
     );

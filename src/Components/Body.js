@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 const Body = () => {
     return (
-        <div>
+        <div className="relative font-[poppins]">
             <Navbar /> 
             <Carousel />
         </div>
