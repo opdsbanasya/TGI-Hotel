@@ -1,11 +1,11 @@
+import Address from "./Address";
 import Carousel from "./Carousel";
-import Navbar from "./Navbar";
 
 const Body = () => {
     return (
-        <div className="relative font-[poppins]">
-            <Navbar /> 
+        <div>
             <Carousel />
+            <Address />
         </div>
     );
 }

@@ -4,7 +4,7 @@ import CarouselTitle from './CarouselTitle';
 
 const Carousel = () => {
     return (
-        <div className='max-w-[100vw] md:max-h-[50vh] mx-auto relative'>
+        <div className='max-w-[100vw] xm:max-h-[50vh] mx-auto '>
             <CarouselBack />
             <CarouselTitle />
         </div>
