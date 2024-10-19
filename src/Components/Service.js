@@ -8,8 +8,8 @@ const Service = ({service}) => {
                 <h2 className="text-4xl font-serif w-[80%]">{service?.title}</h2>
                 <p className="text-sm w-[80%] font-light">{service?.description}</p>
             </div>
-            <div className="w-1/2 h-full">
-                <img className="w-[80%] rounded-lg h-full shadow-2xl" src={service?.img}></img>
+            <div className="w-1/2">
+                <img className=" rounded-lg h-full shadow-2xl aspect-[4/3]" src={service?.img}></img>
             </div>
         </div>
     );
