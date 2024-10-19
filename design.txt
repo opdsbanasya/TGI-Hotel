@@ -7,7 +7,7 @@ Home
         images
         text
     Address
-    article
+    Accomodation
         images
         text
     Services
