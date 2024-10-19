@@ -1,4 +1,4 @@
-import accImage from "../assets/Accomodation.jpg"
+import accImage from "../assets/InfoOf.jpg"
 const Accomodation = () => {
     return (
         <div className="flex px-20 py-10 justify-center items-center gap-10">
