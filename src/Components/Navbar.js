@@ -4,10 +4,10 @@ import { useState } from "react";
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
-    const location = useLocation(); 
+    const location = useLocation();
 
     const isHome = location.pathname === "/";
-    
+
     const handleIsActive = (e) => {
         return {
             color: e.isActive ? "lightblue" : "",
@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (
         <nav className={`h-[14vh] w-screen  ${isHome ? "absolute inset-0 bg-transparent" : "bg-black my-auto"} z-50`}>
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-[15px]">
                 <NavLink to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src={LOGO} className="md:h-[4rem] h-14" alt="Logo" />
                 </NavLink>
@@ -38,11 +38,7 @@ const Navbar = () => {
                                 className="block py-2 px-3 text-white rounded md:border-0 md:hover:text-blue-700 md:p-0"
                             >Home</NavLink>
                         </li>
-                        <li>
-                            <NavLink to="#" className="block py-2 px-3 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">
-                                About
-                            </NavLink>
-                        </li>
+
                         <li>
                             <NavLink
                                 style={handleIsActive}
@@ -51,13 +47,27 @@ const Navbar = () => {
                             >Services</NavLink>
                         </li>
                         <li>
-                            <NavLink to="#" className="block py-2 px-3 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">
-                                Pricing
+                            <NavLink
+                                style={handleIsActive}
+                                to="/pricing"
+                                className="block py-2 px-3 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500"
+                                >Pricing
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="#" className="block py-2 px-3 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">
-                                Contact
+                            <NavLink
+                                style={handleIsActive}
+                                to="/about"
+                                className="block py-2 px-3 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500"
+                                >About
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                style={handleIsActive}
+                                to="/contact-form"
+                                className="block py-2 px-3 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500"
+                                >Contact
                             </NavLink>
                         </li>
                     </ul>

@@ -5,6 +5,9 @@ import {createBrowserRouter, Outlet, RouterProvider} from 'react-router-dom';
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Facilities from "./Components/Facilities";
+import Pricing from "./Components/Pricing";
+import About from "./Components/About";
+import ContactUs from "./Components/ContactUs";
 
 const App = () => {
     return <div className=" font-[poppins]">
@@ -26,7 +29,19 @@ const appRouter = createBrowserRouter([
             {
                 path: "/facilities",
                 element: <Facilities />
-            }
+            },
+            {
+                path: "/pricing",
+                element: <Pricing />
+            },
+            {
+                path: "/about",
+                element: <About />
+            },
+            {
+                path: "/contact-form",
+                element: <ContactUs />
+            },
         ]
     },
     
