@@ -4,6 +4,7 @@ import Body from "./Components/Body";
 import {createBrowserRouter, Outlet, RouterProvider} from 'react-router-dom';
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import Facilities from "./Components/Facilities";
 
 const App = () => {
     return <div className=" font-[poppins]">
@@ -21,6 +22,10 @@ const appRouter = createBrowserRouter([
             {
                 path: "/",
                 element: <Body />
+            },
+            {
+                path: "/facilities",
+                element: <Facilities />
             }
         ]
     },
