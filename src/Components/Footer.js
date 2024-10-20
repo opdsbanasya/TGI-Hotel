@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="w-3/12">
                     <img src={LOGO} className="" />
                 </div>
-                <div className="w-4/12 space-y-5 text-xl">
+                <div className="w-4/12 ml-28 mr-14 space-y-5 text-xl">
                     <h4 className="text-2xl font-semibold">Contact Us</h4>
                     <h4 className="flex items-center gap-3 mr-10 cursor-pointer"><IoMdMail className="bg-white size-6 p-1 rounded-full" />
                         appleinn@tgihotels.com</h4>
