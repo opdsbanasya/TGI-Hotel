@@ -14,7 +14,12 @@ import poolImg from "../assets/main-pool.jpg";
 import hall from "../assets/Hall.jpg";
 import gym from "../assets/zym.jpg";
 import parking from "../assets/parking.jpg";
-import dinningArea from "../assets/dinning-area.jpg"
+import dinningArea from "../assets/dinning-area.jpg";
+import wifi from "../assets/wifi.webp";
+import petsBan from "../assets/banPets.webp";
+import carRental from "../assets/carRental.webp";
+import customerSupport from "../assets/customerSupport.webp";
+
 
 export const LOGO = "https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_130,h_130,r_0,c_crop,q_80,dpr_1,f_auto,fl_progressive/tgi-hotels-and-resorts---3624/Image_-1_rtvdbd";
 
@@ -52,33 +57,56 @@ export const SERVICES = [
 
 export const FACILITIES_DATA = [
     {
-        id:1,
+        id:7,
         img: dinningArea,
         title: "In-House Bar"
     },
     {
-        id:2,
+        id:8,
         img: hall,
         title: "In-House Meeting Hall"
     },
     {
-        id:3,
+        id:9,
         img: poolImg,
         title: "In-House Pool"
     },
     {
-        id:4,
+        id:10,
         img: gym,
         title: "Gym"
     },
     {
-        id:5,
+        id:11,
         img: barImg,
         title: "In-House Bar"
     },
     {
-        id:6,
+        id:12,
         img: parking,
         title: "Spacious Parking Facility"
     },
+]
+
+export const OTHER_FAC = [
+    {
+        id:13,
+        img:carRental,
+        title: "Car Rental"
+    },
+    {
+        id:14,
+        img:customerSupport,
+        title: "Customer Support"
+    },
+    {
+        id:15,
+        img:wifi,
+        title: "WiFi"
+    },
+    {
+        id:16,
+        img:petsBan,
+        title: "No pets"
+    }
 ]
