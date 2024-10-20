@@ -6,9 +6,15 @@ import dinningArea from "../assets/dinning-area.jpg";
 import staff from "../assets/staff.jpg";
 import infoImage from "../assets/mainEntrance.jpg";
 import accImage from "../assets/acc2.jpg";
-import rooftopDinning2 from "../assets/rooftopDinning2.jpg"
-import rooftopDinning from "../assets/rooftopDinning.jpg"
-import eventHall from "../assets/banquet_event.jpg"
+import rooftopDinning2 from "../assets/rooftopDinning2.jpg";
+import rooftopDinning from "../assets/rooftopDinning.jpg";
+import eventHall from "../assets/banquet_event.jpg";
+import barImg from "../assets/party-area.jpg";
+import poolImg from "../assets/main-pool.jpg";
+import hall from "../assets/Hall.jpg";
+import gym from "../assets/zym.jpg";
+import parking from "../assets/parking.jpg";
+import dinningArea from "../assets/dinning-area.jpg"
 
 export const LOGO = "https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_130,h_130,r_0,c_crop,q_80,dpr_1,f_auto,fl_progressive/tgi-hotels-and-resorts---3624/Image_-1_rtvdbd";
 
@@ -42,4 +48,37 @@ export const SERVICES = [
         title: "Services to Ensure a Fantastic Stay", 
         img: rooftopDinning, 
         description: "Recognised as the premier choice for newlyweds, our Jaipur hotel seamlessly blends affordability with comfort. We guarantee a cosy and unforgettable stay in the city, providing contemporary amenities like a swimming pool, a spa and a souvenir shop for thoughtful gifts. Opt for our exceptional yet affordable hotel for a memorable experience in the Pink City today." },
+]
+
+export const FACILITIES_DATA = [
+    {
+        id:1,
+        img: dinningArea,
+        title: "In-House Bar"
+    },
+    {
+        id:2,
+        img: hall,
+        title: "In-House Meeting Hall"
+    },
+    {
+        id:3,
+        img: poolImg,
+        title: "In-House Pool"
+    },
+    {
+        id:4,
+        img: gym,
+        title: "Gym"
+    },
+    {
+        id:5,
+        img: barImg,
+        title: "In-House Bar"
+    },
+    {
+        id:6,
+        img: parking,
+        title: "Spacious Parking Facility"
+    },
 ]
