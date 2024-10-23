@@ -5,7 +5,7 @@ import Services from "./Services";
 
 const Body = () => {
     return (
-        <div>
+        <div className="overflow-hidden w-screen">
             <Carousel />
             <Address />
             <Services />

@@ -3,7 +3,7 @@ import homeBg from "../assets/home1.png";
 
 const Address = () => {
     return (
-        <div style={{backgroundImage:`url(${homeBg}})`}} className="w-screen text-center font-light my-16 py-10 space-y-4">
+        <div style={{backgroundImage:`url(${homeBg}})`}} className="w-full text-center font-light my-16 py-10 space-y-4">
             <h2 className="text-4xl font-light font-serif">TGI Apple Inn, Jaipur</h2>
             <p className="">E-7, 36, Nirman, Nagar DCM Ajmer Road, Jaipur, Rajasthan - 302019</p>
             <div className="flex justify-center gap-8">

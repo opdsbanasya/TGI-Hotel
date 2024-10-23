@@ -6,7 +6,7 @@ const Services = () => {
     console.log(SERVICES);
 
     return (
-        <div className='w-[100vw] mx-auto min-h-screen'>
+        <div className='w-full mx-auto min-h-screen'>
             {SERVICES.map((service) => (
                 <Service key={service.id} service={service} />
             ))}
