@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Service = ({service}) => {
+const Service = ({service, about}) => {
 
     return (
-        <div className={`w-full h-[50%] flex px-32 py-10 justify-center items-center gap-20 ${service?.id%2 === 0 && "flex-row-reverse"}`}>
+        <div className={`w-full h-[50%] flex ${about ? "":"px-32"} py-10 justify-center items-center gap-20 ${service?.id%2 === 0 && "flex-row-reverse"}`}>
             <div className="w-1/2 space-y-5">
                 <h2 className="text-4xl font-serif text-justify">{service?.title}</h2>
                 <p className="text-sm text-justify font-light">{service?.description}</p>
