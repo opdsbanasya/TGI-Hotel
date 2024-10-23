@@ -16,12 +16,12 @@ const Navbar = () => {
     };
 
     return (
-        <nav className={`h-[14vh] w-full  ${isHome ? "absolute inset-0 bg-transparent" : "bg-black my-auto"} z-50 overflow-hidden`}>
-            <div className="w-full flex flex-wrap items-center justify-between mx-auto px-10 py-[15px] overflow-hidden">
+        <nav className={`h-[14vh] w-screen  ${isHome ? "absolute inset-0 bg-transparent" : "bg-black my-auto"} z-50`}>
+            <div className="max-w-full flex flex-wrap items-center justify-between mx-auto px-10 py-[15px]">
                 <NavLink to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src={LOGO} className="md:h-[4rem] h-14" alt="Logo" />
                 </NavLink>
-                <button onClick={() => setShowMenu(!showMenu)} className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                <button onClick={() => setShowMenu(!showMenu)} className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-200">
                     <span className="sr-only">Open main menu</span>
                     {showMenu ? (
                         <img width="50" height="50" src="https://img.icons8.com/?size=100&id=6483&format=png&color=ffffff" alt="close" />
