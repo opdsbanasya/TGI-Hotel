@@ -10,7 +10,7 @@ import About from "./Components/About";
 import ContactUs from "./Components/ContactUs";
 
 const App = () => {
-    return <div className=" font-[poppins]">
+    return <div className="bg-[#FEFAE0] font-[poppins]">
         <Navbar />
         <Outlet />
         <Footer />
