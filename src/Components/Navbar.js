@@ -35,7 +35,7 @@ const Navbar = () => {
                             <NavLink
                                 style={handleIsActive}
                                 to="/"
-                                className="block py-2 px-3 text-white rounded md:border-0 md:hover:text-blue-700 md:p-0"
+                                className="py-2 px-3 text-zinc-200 hover:text-white"
                             >Home</NavLink>
                         </li>
 
@@ -43,14 +43,14 @@ const Navbar = () => {
                             <NavLink
                                 style={handleIsActive}
                                 to="/facilities"
-                                className="block py-2 px-3 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500"
+                                className="py-2 px-3 text-zinc-200 hover:text-white:p-0 hover:text-white"
                             >Services</NavLink>
                         </li>
                         <li>
                             <NavLink
                                 style={handleIsActive}
                                 to="/pricing"
-                                className="block py-2 px-3 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500"
+                                className="py-2 px-3 text-zinc-200 hover:text-white"
                                 >Pricing
                             </NavLink>
                         </li>
@@ -58,7 +58,7 @@ const Navbar = () => {
                             <NavLink
                                 style={handleIsActive}
                                 to="/about"
-                                className="block py-2 px-3 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500"
+                                className="py-2 px-3 text-zinc-200 hover:text-white"
                                 >About
                             </NavLink>
                         </li>
@@ -66,8 +66,8 @@ const Navbar = () => {
                             <NavLink
                                 style={handleIsActive}
                                 to="/contact-form"
-                                className="block py-2 px-3 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500"
-                                >Contact
+                                className="py-2 px-3 text-zinc-200 hover:text-white"
+                                >Contact Us
                             </NavLink>
                         </li>
                     </ul>
@@ -96,7 +96,7 @@ const Navbar = () => {
                         </li>
                         <li>
                             <NavLink to="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
-                                Contact
+                                Contact Us
                             </NavLink>
                         </li>
                     </ul>
