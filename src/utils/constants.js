@@ -110,3 +110,11 @@ export const OTHER_FAC = [
         title: "No pets"
     }
 ]
+
+export const CONTACT_INFO = {
+    name:"TGI Apple Inn, Jaipur",
+    address: "E-7, 36, Nirman Nagar, DCM Ajmer Road, Jaipur, Rajasthan - 302019",
+    email:"appleinn@tgihotels.com",
+    phone1:"+91 14 1486 0090",
+    phone2:"180 0258 3100",
+}
