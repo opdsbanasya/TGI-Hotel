@@ -16,7 +16,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className={`h-[14vh] w-screen  ${isHome ? "absolute inset-0 bg-transparent" : "bg-black my-auto"} z-50`}>
+        <nav className={`h-[14vh] w-full  ${isHome ? "absolute inset-0 bg-transparent" : "bg-black my-auto"} z-50`}>
             <div className="max-w-full flex flex-wrap items-center justify-between mx-auto px-10 py-[15px]">
                 <NavLink to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src={LOGO} className="md:h-[4rem] h-14" alt="Logo" />
