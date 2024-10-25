@@ -31,10 +31,6 @@ const appRouter = createBrowserRouter([
                 element: <Facilities />
             },
             {
-                path: "/pricing",
-                element: <Pricing />
-            },
-            {
                 path: "/about",
                 element: <About />
             },
