@@ -11,10 +11,8 @@ import rooftopDinning from "../assets/rooftopDinning.jpg";
 import eventHall from "../assets/banquet_event.jpg";
 import barImg from "../assets/party-area.jpg";
 import poolImg from "../assets/main-pool.jpg";
-import hall from "../assets/Hall.jpg";
 import gym from "../assets/zym.jpg";
 import parking from "../assets/parking.jpg";
-import dinningArea from "../assets/dinning-area.jpg";
 import wifi from "../assets/wifi.webp";
 import petsBan from "../assets/banPets.webp";
 import carRental from "../assets/carRental.webp";
@@ -30,29 +28,29 @@ export const CAROUSEL_IMG = [
 export const SERVICES = [
     {
         id: 1,
-        title: "Affordable Stay in the Heart of Jaipur!", 
+        title: "Discover Comfort at the Heart of Hosur!", 
         img: infoImage, 
-        description: "Located in the heart of Jaipur, TGI Apple Inn is renowned for its affordable accommodations in a prime location. Situated close to multiple travel hubs, we are merely 1.8 km from the DCM bus stand and 2 km from Mansarovar Metro Station, ensuring a hassle-free commute to our centrally located hotel. We are also in proximity to renowned tourist attractions like Govind Devji Temple and Birla Mandir, allowing you to thoroughly enjoy the city's charm."
+        description: "In a commercial area with shops and businesses, this stylish hotel is 3 km from Murugan Temple and 4 km from Hosur train station. Featuring floor-to-ceiling windows, relax rooms with contemporary vibe offer free Wi-Fi, flat screen TV's and mini fridges, as well as tea and coffeemakers. Suites provide separate living areas, room service is available. Breakfast and parking are included. Amenities consist of 2 restaurants, 1 with patio dining, along with an outdoor pool and a spa."
     },
     { 
         id: 2, 
-        title: "Accommodations at TGI Apple Inn", 
+        title: "Stylish Accommodations in Hosur", 
         img: accImage, 
-        description: "Discover comfort and style at our hotel in Jaipur, featuring five distinct room types namely, Studio, Premium, Suite, Executive and Royal Executive Room. Enjoy the refined furnishings and beautiful decor as you delve into a range of modern amenities such as complimentary Wi-Fi, television and more. Our commitment to great hospitality ensures that you feel right at home in our tidy and elegant abode." },
+        description: "Our Hotel in Hosur offers three impeccable lodging options namely, Superior Rooms, Grand Suites and Fortuna Suites. These accommodations exude an ambience of serenity and sophistication while providing a range of exceptional amenities such as air-conditioning, minibar, television and free Wi-Fi. Each room and suite boasts a distinctive style and decor, enhancing your experience at the hotel." },
     { id: 3, 
         title: "Diverse Dining Options", 
         img: rooftopDinning2, 
-        description: "Experience unparalleled dining at TGI Apple Inn, Jaipur. We offer two distinctive restaurants ensuring a diverse culinary journey. Our fine-dining restaurant Aroma offers lip-smacking dishes while the Roof Top restaurant at our hotel ensures you have great dining overlooking the city." },
-    { 
+        description: "Indulge in a variety of multi-cuisine specialties at our exclusive Flavours Restaurant, which has earned a reputation as a favorite among our guests for its skillful use of spices and flavourful dishes. Additionally, our hotel features The Flames Bar, renowned for its selection of imported beers and a wide range of alcoholic beverages, offering the perfect setting to unwind after a busy day in Hosur." },
+    {
         id: 4, 
         title: "Event Spaces for Every Occasion", 
         img: eventHall, 
-        description: "Our Jaipur hotel comes with all the facilities you need for your social and professional gatherings. With two modern banquet halls that can accommodate guests of up to 200 people, we make sure your event is a success. We also have you covered for throwing parties with our Discotheque which can accommodate up to 130 guests and has a great ambience. " },
+        description: "We offer pristine venues suitable for a wide range of events including meetings, seminars, weddings, gatherings and parties. Our three spacious banquet halls include Crown Conference Hall, Grand Ball Room and  Pavillion Board Room that can accommodate 20 to 350 guests at a time. These banquet spaces are elegantly appointed and come equipped with state-of-the-art amenities and services." },
     { 
         id: 5, 
-        title: "Services to Ensure a Fantastic Stay", 
+        title: "Excellent Facilities", 
         img: rooftopDinning, 
-        description: "Recognised as the premier choice for newlyweds, our Jaipur hotel seamlessly blends affordability with comfort. We guarantee a cosy and unforgettable stay in the city, providing contemporary amenities like a swimming pool, a spa and a souvenir shop for thoughtful gifts. Opt for our exceptional yet affordable hotel for a memorable experience in the Pink City today." },
+        description: "As a Hosur hotel, we prioritise meeting all your needs under our roof, allowing you to unwind after a busy day in the city. We provide a range of facilities like a gym, a swimming pool, an in-house bar and ample parking spaces. These combined with our exceptional hospitality and dedicated staff help us make your Hosur stay as successful and enjoyable as possible." },
 ]
 
 export const FACILITIES_DATA = [
@@ -118,3 +116,57 @@ export const CONTACT_INFO = {
     phone1:"+91 14 1486 0090",
     phone2:"180 0258 3100",
 }
+
+export const GALLERY_DATA = [
+    {
+        id : 17,
+        title:"Building View",
+        img: building,
+    },
+    {
+        id : 18,
+        title:"Event Hall",
+        img: hall,
+    },
+    {
+        id : 19,
+        title:"Pool",
+        img: mainPool,
+    },
+    {
+        id : 20,
+        title:"Dinning Area",
+        img: dinningArea,
+    },
+    {
+        id : 21,
+        title:"Entrance",
+        img: infoImage,
+    },
+    {
+        id : 22,
+        title:"Bedroom",
+        img: accImage,
+    },
+    {
+        id : 23,
+        title:"Rooftop Dinning",
+        img: rooftopDinning,
+    },
+    {
+        id : 24,
+        title:"Event Hall",
+        img: eventHall,
+    },
+    {
+        id : 25,
+        title:"Gym",
+        img: gym,
+    },
+    {
+        id : 26,
+        title:"Parking",
+        img: parking,
+    },
+    // building, hall, mainPool, buildingView, dinningArea, infoImage, accImage, rooftopDinning, rooftopDinning2, eventHall, barImg, poolImg, gym, parking, 
+]
