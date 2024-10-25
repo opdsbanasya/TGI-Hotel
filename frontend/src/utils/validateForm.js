@@ -28,7 +28,7 @@ export const handleSubmit = (e, formData, setFormData, setErrors) => {
     }
 };
 
-export const handleChange = (e, setFormData) => {
+export const handleChange = (e, setFormData, errors) => {
     const { name, value } = e.target;
     setFormData(prev => ({
         ...prev,

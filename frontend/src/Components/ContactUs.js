@@ -39,7 +39,7 @@ const ContactUs = () => {
                                 name={field}
                                 id={field}
                                 value={formData[field]}
-                                onChange={(e) => handleChange(e, setFormData)}
+                                onChange={(e) => handleChange(e, setFormData, formData[field])}
                                 placeholder={field.charAt(0).toUpperCase() + field.slice(1)}
                                 className={`w-full px-4 py-3 rounded-md border ${errors[field] ? 'border-red-500' : 'border-gray-300'} focus:outline-none`}
                             />
