@@ -49,14 +49,6 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 style={handleIsActive}
-                                to="/pricing"
-                                className="py-2 px-3 text-zinc-200 hover:text-white"
-                                >Pricing
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                style={handleIsActive}
                                 to="/about"
                                 className="py-2 px-3 text-zinc-200 hover:text-white"
                                 >About
@@ -87,11 +79,6 @@ const Navbar = () => {
                         <li>
                             <NavLink to="/facilities" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
                                 Services
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
-                                Pricing
                             </NavLink>
                         </li>
                         <li>
