@@ -11,7 +11,7 @@ const CarouselTitle = () => {
   }
 
   return (
-    <div className='w-full h-screen pl-[8vw] pt-[18vw] absolute inset-0 bg-gradient-to-r from-black text-white space-y-5'>
+    <div className='md:block hidden w-full h-screen pl-[8vw] pt-[18vw] absolute inset-0 bg-gradient-to-r from-black text-white space-y-5'>
       <h1 className='text-5xl font-bold font-serif'>{CAROUSEL_DATA?.name}</h1>
       <p className=' w-[40%] font-light tracking-wide'>{CAROUSEL_DATA?.about}</p>
       <button
