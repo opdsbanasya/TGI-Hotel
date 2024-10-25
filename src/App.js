@@ -5,7 +5,6 @@ import {createBrowserRouter, Outlet, RouterProvider} from 'react-router-dom';
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Facilities from "./Components/Facilities";
-import Pricing from "./Components/Pricing";
 import About from "./Components/About";
 import ContactUs from "./Components/ContactUs";
 
