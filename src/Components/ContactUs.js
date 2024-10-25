@@ -16,7 +16,7 @@ const ContactUs = () => {
 
 
     return (
-        <div className="w-full min-h-[50vh] px-5 md:px-10 lg:px-20 xl:px-28 py-7">
+        <div className="w-full min-h-[50vh] px-5 md:px-10 lg:px-20 xl:px-28 lg:pb-10 py-7">
             <Banner />
             <ContactInfo />
             <div className="text-center lg:text-left xl:w-[80%] w-[90%] mx-auto">
