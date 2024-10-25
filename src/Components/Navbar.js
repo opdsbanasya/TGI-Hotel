@@ -30,7 +30,7 @@ const Navbar = () => {
                     )}
                 </button>
                 <div className="md:block hidden w-full md:w-auto">
-                    <ul className="font-light text-xl tracking-wide flex flex-col p-4 md:p-0 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                    <ul className="font-light lg:text-xl md:text-lg tracking-wide flex flex-col p-4 md:p-0 border rounded-lg md:flex-row lg:space-x-8 md:space-x-3 rtl:space-x-reverse md:mt-0 md:border-0">
                         <li>
                             <NavLink
                                 style={handleIsActive}
@@ -45,6 +45,14 @@ const Navbar = () => {
                                 to="/facilities"
                                 className="py-2 px-3 text-zinc-200 hover:text-white:p-0 hover:text-white"
                             >Services</NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                style={handleIsActive}
+                                to="/pricing"
+                                className="py-2 px-3 text-zinc-200 hover:text-white"
+                                >Pricing
+                            </NavLink>
                         </li>
                         <li>
                             <NavLink
@@ -64,7 +72,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className={`${showMenu ? "absolute right-0 top-20 text-center w-full md:w-auto bg-black bg-opacity-20 backdrop-blur-lg" : "hidden"} md:hidden`}>
+                <div className={`${showMenu ? "absolute right-0 top-20 text-center w-full md:w-auto bg-black bg-opacity-20 backdrop-blur-lg" : "hidden"} md:hidden z-50`}>
                     <ul className="font-light text-xl tracking-wide flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 h-fit">
                         <li>
                             <NavLink to="/" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white" aria-current="page">
@@ -72,7 +80,7 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
+                            <NavLink to="/about" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
                                 About
                             </NavLink>
                         </li>
@@ -83,6 +91,11 @@ const Navbar = () => {
                         </li>
                         <li>
                             <NavLink to="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
+                                Pricing
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/contact-form" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
                                 Contact Us
                             </NavLink>
                         </li>
