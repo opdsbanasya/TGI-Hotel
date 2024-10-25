@@ -7,9 +7,13 @@ const Services = ({about}) => {
 
     return (
         <div className={`w-full mx-auto min-h-screen ${about && "pt-16"}`}>
-            {SERVICES.map((service) => (
-                <Service key={service.id} service={service} about={about && about} />
-            ))}
+            {about ? (
+                <Service key={SERVICES[0].id} service={SERVICES[0]} about={about && about} />
+            ):(
+                SERVICES.map((service) => (
+                    <Service key={service.id} service={service}/>
+                ))
+            )}
         </div>
     );
 }
