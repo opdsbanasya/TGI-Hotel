@@ -78,7 +78,7 @@ const ContactForm = () => {
                                     placeholder={field.charAt(0).toUpperCase() + field.slice(1)}
                                     className={`w-full px-4 py-3 rounded-md border ${
                                         errors[field] ? 'border-red-500' : 'border-gray-300'
-                                    } focus:outline-none min-h-[100px]`}
+                                    } focus:outline-none min-h-[100px] resize-none`}
                                 />
                             ) : (
                                 <input
