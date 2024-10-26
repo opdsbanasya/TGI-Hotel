@@ -62,7 +62,7 @@ const ContactForm = () => {
                 </div>
                 <form 
                     onSubmit={(e) => handleSubmit(e, formData, setFormData, setErrors)}
-                    className="lg:w-1/2 w-full md:[80%] space-y-7 mx-auto px-10 py-5"
+                    className="lg:w-1/2 w-full md:[80%] lg:space-y-7 space-y-5 mx-auto px-5 lg:px-10 py-5"
                 >
                     <h2 className="lg:text-md text-sm font-light text-black">
                         *Please! Fill your original Info, so we can reply to you.
@@ -94,7 +94,7 @@ const ContactForm = () => {
                                 />
                             )}
                             {errors[field] && !isTyping[field] && (
-                                <p className="absolute -bottom-5 z-10 text-red-500 text-xs mt-1 ml-1">*{errors[field]}</p>
+                                <p className="absolute lg:-bottom-5 -bottom-[1.2rem] z-10 text-red-500 lg:text-xs text-[0.65rem] mt-1 ml-1">*{errors[field]}</p>
                             )}
                         </div>
                     ))}
