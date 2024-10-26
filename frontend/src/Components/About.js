@@ -4,7 +4,7 @@ import Services from './Services';
 
 const About = () => {
     return (
-        <div className="w-full min-h-[50vh] px-28 py-7">
+        <div className="w-full min-h-[50vh] px-5 md:px-10 lg:px-20 xl:px-28 lg:pb-10 py-7">
             <Banner />
             <Services about={true} />
             <h2 className="text-3xl font-semibold font-serif text-black mb-10 -mt-20">

@@ -1,15 +1,16 @@
-import React from 'react';
 
-const Service = ({service, about}) => {
+const Service = ({ service, about }) => {
 
     return (
-        <div className={`w-full h-[50%] flex ${about ? "":"px-32"} py-10 justify-center items-center gap-20 ${service?.id%2 === 0 && "flex-row-reverse"}`}>
-            <div className="w-1/2 space-y-5">
-                <h2 className="text-4xl font-serif text-justify">{service?.title}</h2>
+        <div className={`w-full h-[50%] flex flex-col-reverse bg-zinc-200 md:bg-transparent rounded-lg md:overflow-hidden md:py-10  justify-center items-center md:gap-10 lg:gap-20 gap-5 
+            ${[service?.id % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse", !about && "lg:px-32 md:px-20"].join(" ")
+            }`}>
+            <div className="md:w-1/2 px-5 md:space-y-5 space-y-3">
+                <h2 className="text-xl md:text-2xl lg:text-3xl font-serif text-justify">{service?.title}</h2>
                 <p className="text-sm text-justify font-light">{service?.description}</p>
             </div>
-            <div className="w-1/2">
-                <img className=" rounded-lg h-full shadow-2xl aspect-[5/3]" src={service?.img}></img>
+            <div className="md:w-1/2">
+                <img className="md:shadow-xl shadow-none md:rounded-lg w-full lg:aspect-[5/3] aspect-[4/3]" src={service?.img}></img>
             </div>
         </div>
     );
