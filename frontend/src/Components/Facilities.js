@@ -6,15 +6,15 @@ import OtherFacilities from "./OtherFacilities";
 
 const Facilities = () => {
     return (
-        <div className="w-full min-h-[50vh] px-28 py-7">
+        <div className="w-full min-h-[50vh] px-5 md:px-10 lg:px-20 xl:px-28 lg:pb-10 py-7">
             <Banner bannerImg={buildingImg} />
-            <h3 className="text-4xl font-light font-serif text-center py-12">Facilities at TGI Grand Fortuna, Hosur</h3>
-            <div className="flex items-center justify-start gap-5 flex-wrap">
+            <h3 className="w-full md:w-[90%] text-lg md:text-2xl lg:text-3xl xl:text-4xl font-light mx-auto text-center font-serif py-7 md:py-10">Facilities at TGI Grand Fortuna, Hosur</h3>
+            <div className="flex items-center justify-center xl:gap-5 lg:gap-10 md:gap-8 gap-5 flex-wrap">
                 {FACILITIES_DATA.map((item) => (
                     <Facility key={item.id} item={item} />
                 ))}
             </div>
-            <div className="py-10 mt-20 flex justify-evenly items-center gap-20 bg-zinc-200 rounded-xl">
+            <div className="w-full py-10 px-2 mt-20 flex md:flex-nowrap flex-wrap justify-evenly items-center md:gap-20 gap-5 bg-zinc-200 rounded-xl">
                 {OTHER_FAC.map(item => (
                     <OtherFacilities item={item} />
                 ))}
