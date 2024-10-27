@@ -5,7 +5,7 @@ import { CONTACT_INFO, LOGO } from "../utils/constants";
 const Footer = () => {
     return (
         <div className="w-full bg-black text-white">
-            <div className="w-full py-10 px-4 md:px-28 flex flex-col md:flex-row justify-center items-center">
+            <div className="w-full py-10 px-4 md:px-28 flex flex-col md:flex-row justify-center items-start">
                 <div className="w-full md:w-3/12 flex justify-center mb-5 md:mb-0">
                     <img src={LOGO} className="max-w-full h-auto" />
                 </div>
@@ -24,9 +24,9 @@ const Footer = () => {
                         {CONTACT_INFO?.phone2}
                     </h4>
                 </div>
-                <div className="w-full md:w-4/12 text-xl">
+                <div className="w-full md:w-4/12 text-xl space-y-5">
                     <h4 className="text-2xl md:py-0 py-4 mt-2">Get In Touch</h4>
-                    <div className="flex gap-3">
+                    <div className="flex gap-4">
                         <FaFacebook className="cursor-pointer" />
                         <FaInstagram className="cursor-pointer" />
                         <FaLinkedin className="cursor-pointer" />

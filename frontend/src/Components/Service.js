@@ -9,8 +9,8 @@ const Service = ({ service, about }) => {
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-serif text-justify">{service?.title}</h2>
                 <p className="text-sm text-justify font-light">{service?.description}</p>
             </div>
-            <div className="md:w-1/2">
-                <img className="md:shadow-xl shadow-none md:rounded-lg w-full lg:aspect-[5/3] aspect-[4/3]" src={service?.img}></img>
+            <div className="md:w-1/2 overflow-hidden md:shadow-xl shadow-none md:rounded-lg">
+                <img className=" scale-105 w-full lg:aspect-[5/3] aspect-[4/3]" src={service?.img}></img>
             </div>
         </div>
     );
