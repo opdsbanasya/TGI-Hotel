@@ -1,9 +1,9 @@
-import Banner from './Banner';
+
 
 const Pricing = () => {
     return (
-        <div className="w-full min-h-[50vh] px-28 py-7">
-            <Banner />
+        <div id="pricing" className="w-full min-h-[20vh] px-28 py-7">
+            Pricing
         </div>
     );
 }

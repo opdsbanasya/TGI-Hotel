@@ -6,7 +6,7 @@ const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
     const location = useLocation();
 
-    const isHome = location.pathname === "/";
+    const isHome = location.pathname === "/" || location.pathname === "/pricing";
 
     const handleIsActive = (e) => {
         return {
@@ -14,6 +14,14 @@ const Navbar = () => {
             textDecoration: e.isActive ? "underline" : "",
         };
     };
+
+    const handleClickScroll = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+
 
     return (
         <nav className={`h-[14vh] w-full  ${isHome ? "absolute inset-0 bg-transparent" : "bg-black my-auto"} z-50`}>
@@ -50,8 +58,9 @@ const Navbar = () => {
                             <NavLink
                                 style={handleIsActive}
                                 to="/pricing"
+                                onClick={() => handleClickScroll("pricing")}
                                 className="py-2 px-3 text-zinc-200 hover:text-white"
-                                >Pricing
+                            >Pricing
                             </NavLink>
                         </li>
                         <li>
@@ -59,7 +68,7 @@ const Navbar = () => {
                                 style={handleIsActive}
                                 to="/about"
                                 className="py-2 px-3 text-zinc-200 hover:text-white"
-                                >About
+                            >About
                             </NavLink>
                         </li>
                         <li>
@@ -67,7 +76,7 @@ const Navbar = () => {
                                 style={handleIsActive}
                                 to="/contact-form"
                                 className="py-2 px-3 text-zinc-200 hover:text-white"
-                                >Contact Us
+                            >Contact Us
                             </NavLink>
                         </li>
                     </ul>
@@ -75,27 +84,30 @@ const Navbar = () => {
                 <div className={`${showMenu ? "absolute right-0 top-20 text-center w-full md:w-auto bg-black bg-opacity-20 backdrop-blur-lg" : "hidden"} md:hidden z-50`}>
                     <ul className="font-light text-xl tracking-wide flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 h-fit">
                         <li>
-                            <NavLink to="/" onClick={()=>setShowMenu(false)} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white" aria-current="page">
+                            <NavLink to="/" onClick={() => setShowMenu(false)} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white" aria-current="page">
                                 Home
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/about" onClick={()=>setShowMenu(false)} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
+                            <NavLink to="/about" onClick={() => setShowMenu(false)} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
                                 About
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/facilities" onClick={()=>setShowMenu(false)} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
+                            <NavLink to="/facilities" onClick={() => setShowMenu(false)} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
                                 Services
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="#" onClick={()=>setShowMenu(false)} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
+                            <NavLink to="#" onClick={() => {
+                                setShowMenu(false);
+                                handleClickScroll("pricing");
+                            }} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
                                 Pricing
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contact-form" onClick={()=>setShowMenu(false)} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
+                            <NavLink to="/contact-form" onClick={() => setShowMenu(false)} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
                                 Contact Us
                             </NavLink>
                         </li>

@@ -7,6 +7,7 @@ import Footer from "./Components/Footer";
 import Facilities from "./Components/Facilities";
 import About from "./Components/About";
 import ContactUs from "./Components/ContactUs";
+import Pricing from "./Components/Pricing";
 
 const App = () => {
     return <div className="bg-[#FEFAE0] font-[poppins]">
@@ -23,7 +24,13 @@ const appRouter = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Body />
+                element: <Body />,
+                children: [
+                    {
+                        path: "/pricing",
+                        element: <Pricing />
+                    }
+                ]
             },
             {
                 path: "/facilities",
