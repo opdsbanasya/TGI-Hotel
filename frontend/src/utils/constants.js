@@ -15,10 +15,10 @@ import entrance from "../assets/mainEntrance.jpg";
 import kichen from "../assets/serving-area.jpg";
 import parking from "../assets/parking.jpg";
 import washroom from "../assets/washroom.jpg"
-import wifi from "../assets/wifi.webp";
-import petsBan from "../assets/banPets.webp";
-import carRental from "../assets/carRental.webp";
-import customerSupport from "../assets/customerSupport.webp";
+import wifi from "../assets/wifi.png";
+import petsBan from "../assets/banPets.png";
+import carRental from "../assets/carRental.png";
+import customerSupport from "../assets/customerSupport.png";
 
 
 export const LOGO = "https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_130,h_130,r_0,c_crop,q_80,dpr_1,f_auto,fl_progressive/tgi-hotels-and-resorts---3624/Image_-1_rtvdbd";
