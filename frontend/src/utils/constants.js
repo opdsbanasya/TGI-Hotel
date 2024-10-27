@@ -4,15 +4,17 @@ import mainPool from "../assets/main-pool.jpg";
 import buildingView from "../assets/building-view.jpg";
 import dinningArea from "../assets/dinning-area.jpg";
 import staff from "../assets/staff.jpg";
-import infoImage from "../assets/mainEntrance.jpg";
-import accImage from "../assets/acc2.jpg";
-import rooftopDinning2 from "../assets/rooftopDinning2.jpg";
-import rooftopDinning from "../assets/rooftopDinning.jpg";
+import bedroom from "../assets/bedroom.jpg";
+import dinning2 from "../assets/dinning-area3.jpg";
 import eventHall from "../assets/banquet_event.jpg";
 import barImg from "../assets/party-area.jpg";
 import poolImg from "../assets/main-pool.jpg";
 import gym from "../assets/zym.jpg";
+import sittingArea from "../assets/sitting-area2.jpg";
+import entrance from "../assets/mainEntrance.jpg";
+import kichen from "../assets/serving-area.jpg";
 import parking from "../assets/parking.jpg";
+import washroom from "../assets/washroom.jpg"
 import wifi from "../assets/wifi.webp";
 import petsBan from "../assets/banPets.webp";
 import carRental from "../assets/carRental.webp";
@@ -34,17 +36,17 @@ export const SERVICES = [
     {
         id: 1,
         title: "Discover Comfort at the Heart of Hosur!", 
-        img: infoImage, 
+        img: building, 
         description: "In a commercial area with shops and businesses, this stylish hotel is 3 km from Murugan Temple and 4 km from Hosur train station. Featuring floor-to-ceiling windows, relax rooms with contemporary vibe offer free Wi-Fi, flat screen TV's and mini fridges, as well as tea and coffeemakers. Suites provide separate living areas, room service is available. Breakfast and parking are included. Amenities consist of 2 restaurants, 1 with patio dining, along with an outdoor pool and a spa."
     },
     { 
         id: 2, 
         title: "Stylish Accommodations in Hosur", 
-        img: accImage, 
+        img: bedroom, 
         description: "Our Hotel in Hosur offers three impeccable lodging options namely, Superior Rooms, Grand Suites and Fortuna Suites. These accommodations exude an ambience of serenity and sophistication while providing a range of exceptional amenities such as air-conditioning, minibar, television and free Wi-Fi. Each room and suite boasts a distinctive style and decor, enhancing your experience at the hotel." },
     { id: 3, 
         title: "Diverse Dining Options", 
-        img: rooftopDinning2, 
+        img: dinning2, 
         description: "Indulge in a variety of multi-cuisine specialties at our exclusive Flavours Restaurant, which has earned a reputation as a favorite among our guests for its skillful use of spices and flavourful dishes. Additionally, our hotel features The Flames Bar, renowned for its selection of imported beers and a wide range of alcoholic beverages, offering the perfect setting to unwind after a busy day in Hosur." },
     {
         id: 4, 
@@ -54,7 +56,7 @@ export const SERVICES = [
     { 
         id: 5, 
         title: "Excellent Facilities", 
-        img: rooftopDinning, 
+        img: sittingArea, 
         description: "As a Hosur hotel, we prioritise meeting all your needs under our roof, allowing you to unwind after a busy day in the city. We provide a range of facilities like a gym, a swimming pool, an in-house bar and ample parking spaces. These combined with our exceptional hospitality and dedicated staff help us make your Hosur stay as successful and enjoyable as possible." },
 ]
 
@@ -144,24 +146,24 @@ export const GALLERY_DATA = [
         img: dinningArea,
     },
     {
+        id : 28,
+        title:"Kichen",
+        img: kichen,
+    },
+    {
         id : 21,
         title:"Entrance",
-        img: infoImage,
+        img: entrance,
     },
     {
         id : 22,
         title:"Bedroom",
-        img: accImage,
-    },
-    {
-        id : 23,
-        title:"Rooftop Dinning",
-        img: rooftopDinning,
+        img: bedroom,
     },
     {
         id : 24,
-        title:"Event Hall",
-        img: eventHall,
+        title:"Sitting Area",
+        img: sittingArea,
     },
     {
         id : 25,
@@ -173,5 +175,10 @@ export const GALLERY_DATA = [
         title:"Parking",
         img: parking,
     },
-    // building, hall, mainPool, buildingView, dinningArea, infoImage, accImage, rooftopDinning, rooftopDinning2, eventHall, barImg, poolImg, gym, parking, 
+    {
+        id : 27,
+        title:"Washroom",
+        img: washroom,
+    },
+    // building, hall, mainPool, buildingView, dinningArea, infoImage, bedroom, rooftopDinning, dinning2, eventHall, barImg, poolImg, gym, parking, 
 ]

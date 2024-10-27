@@ -2,7 +2,7 @@
 // ContactForm.jsx
 import React, { useState, useEffect } from 'react';
 import { handleChange, handleSubmit, validateField } from '../utils/validateForm';
-import mainEntrance from "../assets/mainEntrance.jpg";
+import sittingArea from "../assets/sitting-area2.jpg";
 import Banner from './Banner';
 import ContactInfo from './ContactInfo';
 
@@ -58,7 +58,7 @@ const ContactForm = () => {
             </div>
             <div id="contact-form" className="flex flex-col lg:flex-row items-center justify-center bg-zinc-300 rounded-xl overflow-hidden">
                 <div className="lg:w-1/2 w-full h-full">
-                    <img className="aspect-square object-cover h-full" src={mainEntrance} alt="Main Entrance" />
+                    <img className="aspect-square object-cover object-bottom h-full" src={sittingArea} alt="Main Entrance" />
                 </div>
                 <form 
                     onSubmit={(e) => handleSubmit(e, formData, setFormData, setErrors)}
