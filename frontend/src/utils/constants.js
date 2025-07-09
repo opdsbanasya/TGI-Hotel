@@ -21,7 +21,7 @@ import carRental from "../assets/carRental.png";
 import customerSupport from "../assets/customerSupport.png";
 
 
-export const LOGO = "https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_130,h_130,r_0,c_crop,q_80,dpr_1,f_auto,fl_progressive/tgi-hotels-and-resorts---3624/Image_-1_rtvdbd";
+export const LOGO = "https://assets.simplotel.com/simplotel/image/upload/x_0,y_0,w_333,h_333,r_0,c_crop,q_80,dpr_1,f_auto,fl_progressive/w_355,h_200,f_auto,c_fit/tgi-hotels-and-resorts/Logo_TGI_Hotels_and_Resorts_fkoyuu_wwa80g";
 
 export const CAROUSEL_DATA = {
     name:"TGI Hotel",
